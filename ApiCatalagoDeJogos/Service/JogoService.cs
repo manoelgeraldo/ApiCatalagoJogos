@@ -32,7 +32,7 @@ namespace ApiCatalagoDeJogos.Service
             }).ToList();
         }
 
-        public async Task<JogoViewModel> Obter(Guid id)
+        public async Task<JogoViewModel> Obter(int id)
         {
             var jogo = await _jogoRepository.Obter(id);
 
@@ -56,7 +56,6 @@ namespace ApiCatalagoDeJogos.Service
 
             var jogoInsert = new Jogo
             {
-                Id = Guid.NewGuid(),
                 Nome = jogo.Nome,
                 Produtora = jogo.Produtora,
                 Preco = jogo.Preco
@@ -73,7 +72,7 @@ namespace ApiCatalagoDeJogos.Service
             };
         }
 
-        public async Task Atualizar(Guid id, JogoInputModel jogo)
+        public async Task Atualizar(int id, JogoInputModel jogo)
         {
             var entidadeJogo = await _jogoRepository.Obter(id);
 
@@ -87,7 +86,7 @@ namespace ApiCatalagoDeJogos.Service
             await _jogoRepository.Atualizar(entidadeJogo);
         }
 
-        public async Task Atualizar(Guid id, double preco)
+        public async Task Atualizar(int id, double preco)
         {
             var entidadeJogo = await _jogoRepository.Obter(id);
 
@@ -99,7 +98,7 @@ namespace ApiCatalagoDeJogos.Service
             await _jogoRepository.Atualizar(entidadeJogo);
         }
 
-        public async Task Remover(Guid id)
+        public async Task Remover(int id)
         {
             var jogo = await _jogoRepository.Obter(id);
 

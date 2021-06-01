@@ -30,7 +30,7 @@ namespace ApiCatalagoDeJogos.Repositories
             {
                 jogos.Add(new Jogo
                 {
-                    Id = (Guid)sqlDataReader["Id"],
+                    Id = (int)sqlDataReader["Id"],
                     Nome = (string)sqlDataReader["Nome"],
                     Produtora = (string)sqlDataReader["Produtora"],
                     Preco = (double)sqlDataReader["Preco"]
@@ -42,7 +42,7 @@ namespace ApiCatalagoDeJogos.Repositories
             return jogos;
         }
 
-        public async Task<Jogo> Obter(Guid id)
+        public async Task<Jogo> Obter(int id)
         {
             Jogo jogo = null;
 
@@ -56,7 +56,7 @@ namespace ApiCatalagoDeJogos.Repositories
             {
                 jogo = new Jogo
                 {
-                    Id = (Guid)sqlDataReader["Id"],
+                    Id = (int)sqlDataReader["Id"],
                     Nome = (string)sqlDataReader["Nome"],
                     Produtora = (string)sqlDataReader["Produtora"],
                     Preco = (double)sqlDataReader["Preco"]
@@ -82,7 +82,7 @@ namespace ApiCatalagoDeJogos.Repositories
             {
                 jogos.Add(new Jogo
                 {
-                    Id = (Guid)sqlDataReader["Id"],
+                    Id = (int)sqlDataReader["Id"],
                     Nome = (string)sqlDataReader["Nome"],
                     Produtora = (string)sqlDataReader["Produtora"],
                     Preco = (double)sqlDataReader["Preco"]
@@ -96,7 +96,7 @@ namespace ApiCatalagoDeJogos.Repositories
 
         public async Task Inserir(Jogo jogo)
         {
-            var comando = $"insert Jogos (Id, Nome, Produtora, Preco) values ('{jogo.Id}', '{jogo.Nome}', '{jogo.Produtora}', {jogo.Preco.ToString().Replace(",", ".")})";
+            var comando = $"insert Jogos (Nome, Produtora, Preco) values ('{jogo.Nome}', '{jogo.Produtora}', {jogo.Preco.ToString().Replace(",", ".")})";
 
             await sqlConnection.OpenAsync();
             SqlCommand sqlCommand = new SqlCommand(comando, sqlConnection);
@@ -114,7 +114,7 @@ namespace ApiCatalagoDeJogos.Repositories
             await sqlConnection.CloseAsync();
         }
 
-        public async Task Remover(Guid id)
+        public async Task Remover(int id)
         {
             var comando = $"delete from Jogos where Id = '{id}'";
 

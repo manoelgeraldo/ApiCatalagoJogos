@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cibelle Caldas\\Desktop\\Projects\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj": {}
+    "C:\\Users\\USUARIO\\Desktop\\JUVENAL\\Pessoal\\ApiCatalagoJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cibelle Caldas\\Desktop\\Projects\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj": {
+    "C:\\Users\\USUARIO\\Desktop\\JUVENAL\\Pessoal\\ApiCatalagoJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cibelle Caldas\\Desktop\\Projects\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\JUVENAL\\Pessoal\\ApiCatalagoJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj",
         "projectName": "ApiCatalagoDeJogos",
-        "projectPath": "C:\\Users\\Cibelle Caldas\\Desktop\\Projects\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj",
-        "packagesPath": "C:\\Users\\Cibelle Caldas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cibelle Caldas\\Desktop\\Projects\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Desktop\\JUVENAL\\Pessoal\\ApiCatalagoJogos\\ApiCatalagoDeJogos\\ApiCatalagoDeJogos.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\JUVENAL\\Pessoal\\ApiCatalagoJogos\\ApiCatalagoDeJogos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cibelle Caldas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

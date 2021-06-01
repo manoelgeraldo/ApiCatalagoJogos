@@ -34,8 +34,8 @@ namespace ApiCatalagoDeJogos.Controllers.v1
             return Ok(jogos);
         }
         
-        [HttpGet("{idJogo:guid}")]
-        public async Task<ActionResult<List<JogoViewModel>>> Obter([FromRoute] Guid idJogo)
+        [HttpGet("{idJogo:int}")]
+        public async Task<ActionResult<List<JogoViewModel>>> Obter([FromRoute] int idJogo)
         {
             var jogo = await _jogoService.Obter(idJogo);
             
@@ -60,8 +60,8 @@ namespace ApiCatalagoDeJogos.Controllers.v1
             }
         }
         
-        [HttpPut("{idJogo:guid}")]
-        public async Task<ActionResult> AtualizarJogo([FromRoute] Guid idJogo, [FromBody] JogoInputModel jogoInputModel)
+        [HttpPut("{idJogo:int}")]
+        public async Task<ActionResult> AtualizarJogo([FromRoute] int idJogo, [FromBody] JogoInputModel jogoInputModel)
         {
             try
             {
@@ -75,8 +75,8 @@ namespace ApiCatalagoDeJogos.Controllers.v1
             }
         }
         
-        [HttpPatch("{idJogo:guid}/preco/{preco:double}")]
-        public async Task<ActionResult> AtualizarJogo([FromRoute] Guid idJogo, [FromBody] double preco)
+        [HttpPatch("{idJogo:int}/preco/{preco:double}")]
+        public async Task<ActionResult> AtualizarJogo([FromRoute] int idJogo, [FromBody] double preco)
         {
             try
             {
@@ -89,8 +89,8 @@ namespace ApiCatalagoDeJogos.Controllers.v1
             }
         }
         
-        [HttpDelete("{idJogo:guid}")]
-        public async Task<ActionResult> ApagarJogo([FromRoute] Guid idJogo)
+        [HttpDelete("{idJogo:int}")]
+        public async Task<ActionResult> ApagarJogo([FromRoute] int idJogo)
         {
             try
             {
